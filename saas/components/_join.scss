@@ -1,0 +1,28 @@
+.join {
+	margin-left: 70px;
+	padding-top: 12px;
+}
+
+.join__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white-text-color);
+}
+
+.join .soc-list {
+	margin-top: 20px;
+}
+
+.join .soc-list__link {
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.1);
+	transition: color 250ms var(--time-function), background-color 250ms var(--time-function);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		color: var(--white-text-color);
+	}
+}

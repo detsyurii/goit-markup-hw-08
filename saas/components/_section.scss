@@ -1,0 +1,36 @@
+.section {
+	padding: 94px 0;
+}
+
+.section__title {
+	margin-bottom: 50px;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-text-color);
+}
+
+.section-list {
+	display: flex;
+}
+
+.section-list__title {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-text-color);
+}
+
+.section-list__text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--second-text-color);
+}
+
+.section-list__item:not(:last-child) {
+	margin-right: 30px;
+}
