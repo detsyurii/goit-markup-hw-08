@@ -59,7 +59,8 @@
 
 
 .contacts {
-	display: flex;
+	display: none;
+	// display: flex;
 	margin-left: auto;
 }
 
@@ -70,7 +71,8 @@
 
 
 .contacts__link {
-	display: flex;
+	display: none;
+	// display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 500;
