@@ -1,7 +1,13 @@
 .join {
-	// margin-left: 70px;
 	margin-top: 60px;
 	padding-top: 12px;
+	@include tablet {
+		margin-bottom: 0;
+		margin-left: 165px;
+	  }
+	  @include desktop {
+		margin-left: 70px;
+	  }
 }
 
 .join__title {

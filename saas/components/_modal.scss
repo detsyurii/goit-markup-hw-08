@@ -1,6 +1,6 @@
 .modal {
 	padding: 40px;
-	width: 528px;
+	width: 450px;
 	height: 581px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -9,6 +9,9 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	@include desktop {
+		width: 528px;
+	}
 }
 
 .modal__close-button {
@@ -30,10 +33,13 @@
 	margin-bottom: 12px;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
+	@include desktop {
+		line-height: 1.15;
+	}
 }
 
 .modal__input {
@@ -49,7 +55,6 @@
 		border: 1px solid var(--accent-color);
 	}
 }
-
 
 .modal__label {
 	display: flex;
@@ -140,9 +145,13 @@
 
 .modal__check-text {
 	margin-left: 7px;
-	font-size: 14px;
-	line-height: 1.7;
+	font-size: 12px;
+	line-height: 1.16;
 	color: var(--second-text-color);
+	@include desktop {
+		font-size: 14px;
+		line-height: 1.7;
+	}
 }
 
 .modal__check-link {

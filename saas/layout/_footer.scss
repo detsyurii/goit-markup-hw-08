@@ -3,10 +3,20 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	text-align: center;
+	
 }
 
 .footer .container {
-	// display: flex;
+	@include tablet {
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		justify-content: space-around;
+	  }
+	  @include desktop{
+		text-align: left;
+	  }
 }
 
 .footer .logo {
@@ -25,13 +35,16 @@
 	}
 }
 
-
 .footer-contacts__adress {
 	color: var(--white-text-color);
 	transition: color 250ms var(--time-function);
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+
+	@include desktop {
+		margin: 0;
 	}
 }
 
